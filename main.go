@@ -12,8 +12,8 @@ import (
 const (
 	HOST        = "smtp.qq.com"
 	SERVER_ADDR = "smtp.qq.com:25"
-	USER        = "1161276086@qq.com"
-	PASSWORD    = "kxmkljsnnhuqicib"
+	USER        = "XXX@qq.com"
+	PASSWORD    = "XXX"//邮件号SMTP授权
 )
 
 type Email struct {
@@ -71,7 +71,7 @@ func main() {
 		for _, row := range sheet.Rows {
 			emailStr := &Email{
 				to:       row.Cells[1].String(),
-				subject:  "面试邀请",
+				subject:  "XXX",
 				msg:      "<html><body><h3>" + row.Cells[0].String() + ":</h3><h4>" + row.Cells[2].String() + "</h4></body></html>",
 				mailtype: "html",
 			}
