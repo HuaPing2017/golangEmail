@@ -54,10 +54,10 @@ func readLine2Array(filename string) ([]string, error) {
 }
 
 func main() {
-	user := "1161276086@qq.com"
-	password := "kxmkljsnnhuqicib"
+	user := "XXX@qq.com"
+	password := "XXX"//邮件SMTP授权密码
 	host := "smtp.qq.com:25"
-	//to := "jennifer9409@163.com"
+	//to := "XXX@163.com"
 	subject := "使用Golang发送邮件"
 	//body := "<html><body><h3>测试发送Email</h3></body></html>"
 	//fmt.Print("发送邮件")
